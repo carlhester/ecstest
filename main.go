@@ -1,10 +1,10 @@
 package main
 
 import (
-    "ecstest/game"
+	"ecstest/game"
 )
 
 func main() {
-    newGame := game.NewGame()
-    newGame.Run()
+	newGame := game.NewGame()
+	newGame.Run()
 }

@@ -5,20 +5,20 @@ import (
 )
 
 type Entity struct {
-    Name string
+	Name       string
 	Components map[string]components.Component
 }
 
 func NewEntity(name ...string) *Entity {
-    var charName string
-    if len(name) == 0 { 
-        charName = "UnnamedEntity"
-    } else { 
-        charName = name[0]
-    }
+	var charName string
+	if len(name) == 0 {
+		charName = "UnnamedEntity"
+	} else {
+		charName = name[0]
+	}
 
 	return &Entity{
-        Name: charName,
+		Name:       charName,
 		Components: make(map[string]components.Component),
 	}
 }
@@ -40,4 +40,3 @@ func (e *Entity) RemoveComponent(componentName string) {
 		delete(e.Components, componentName)
 	}
 }
-

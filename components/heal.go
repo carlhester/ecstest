@@ -7,4 +7,3 @@ type HealComponent struct {
 func (c HealComponent) IsComponent() bool {
 	return true
 }
-
