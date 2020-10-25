@@ -22,9 +22,15 @@ func (g *game) Run() {
 	player.AddComponent("damage", components.DamageComponent{Damage: 3})
 	entities = append(entities, player)
 
-	mob := entity.NewEntity("Mob")
+	mob := entity.NewEntity("Mob1")
 	mob.AddComponent("health", components.HealthComponent{Hp: 100})
 	mob.AddComponent("damage", components.DamageComponent{Damage: 17})
+	mob.AddComponent("wander", components.WanderComponent{})
+	entities = append(entities, mob)
+	
+    mob = entity.NewEntity("Mob2")
+	mob.AddComponent("health", components.HealthComponent{Hp: 100})
+	mob.AddComponent("damage", components.DamageComponent{Damage: 11})
 	mob.AddComponent("wander", components.WanderComponent{})
 	entities = append(entities, mob)
 
