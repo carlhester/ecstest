@@ -28,3 +28,18 @@ func (c DamageComponent) IsComponent() bool {
 	return true
 }
 
+type SizeComponent struct {
+    Height int
+}
+
+func (c SizeComponent) IsComponent() bool {
+	return true
+}
+
+type GrowComponent struct { 
+    Growth int
+}
+
+func (c GrowComponent) IsComponent() bool {
+	return true
+}
