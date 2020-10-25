@@ -5,11 +5,20 @@ import (
 )
 
 type Entity struct {
+    Name string
 	Components map[string]components.Component
 }
 
-func NewEntity() *Entity {
+func NewEntity(name ...string) *Entity {
+    var charName string
+    if len(name) == 0 { 
+        charName = "UnnamedEntity"
+    } else { 
+        charName = name[0]
+    }
+
 	return &Entity{
+        Name: charName,
 		Components: make(map[string]components.Component),
 	}
 }
