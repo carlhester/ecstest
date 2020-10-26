@@ -1,8 +1,6 @@
 package entity
 
-import (
-	"ecstest/components"
-)
+import "github.com/crucialcarl/ecstest/components"
 
 type Entity struct {
 	Name       string

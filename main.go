@@ -1,7 +1,7 @@
 package main
 
 import (
-	"ecstest/game"
+	"github.com/crucialcarl/ecstest/game"
 )
 
 func main() {

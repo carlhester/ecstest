@@ -1,10 +1,11 @@
 package systems
 
 import (
-	"ecstest/entity"
 	"fmt"
 	"math/rand"
 	"time"
+
+	"github.com/crucialcarl/ecstest/entity"
 )
 
 func WanderEntities(e *entity.Entity) {

@@ -1,9 +1,10 @@
 package systems
 
 import (
-	"ecstest/components"
-	"ecstest/entity"
 	"fmt"
+
+	"github.com/crucialcarl/ecstest/components"
+	"github.com/crucialcarl/ecstest/entity"
 )
 
 func DamageEntities(e *entity.Entity) {

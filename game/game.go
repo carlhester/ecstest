@@ -1,10 +1,11 @@
 package game
 
 import (
-	"ecstest/components"
-	"ecstest/entity"
-	"ecstest/systems"
 	"fmt"
+
+	"github.com/crucialcarl/ecstest/components"
+	"github.com/crucialcarl/ecstest/entity"
+	"github.com/crucialcarl/ecstest/systems"
 )
 
 type game struct{}
@@ -27,8 +28,8 @@ func (g *game) Run() {
 	mob.AddComponent("damage", components.DamageComponent{Damage: 17})
 	mob.AddComponent("wander", components.WanderComponent{})
 	entities = append(entities, mob)
-	
-    mob = entity.NewEntity("Mob2")
+
+	mob = entity.NewEntity("Mob2")
 	mob.AddComponent("health", components.HealthComponent{Hp: 100})
 	mob.AddComponent("damage", components.DamageComponent{Damage: 11})
 	mob.AddComponent("wander", components.WanderComponent{})
